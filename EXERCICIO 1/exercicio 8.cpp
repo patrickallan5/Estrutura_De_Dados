@@ -66,9 +66,27 @@ while (finalizar != 0){
 	float  p_vn = ((cont_null * 100)/ total_voto);
 	float p_vb = ((cont_branco * 100)/ total_voto);
 	
-	cout <<"percentual de voto para o candidato 1 eh " << p_v1 << " com " << cont_v1 << " votos " << endl;
-	cout <<"percentual de voto para o candidato 2 eh " << p_v2 << " com " << cont_v2 << " votos " << endl;
-	cout <<"percentual de voto nulos " << p_vn << " com " << cont_null << " votos " << endl;
-	cout <<"percentual de voto em branco " << p_vb << " com " << cont_branco << " votos " << endl;
+	if (cont_v1 > 1){
+			cout <<"percentual de voto para o candidato 1 eh " << p_v1 << "% com " << cont_v1 << " votos " << endl;
+	}else {
+		cout <<"percentual de voto para o candidato 1 eh " << p_v1 << "% com " << cont_v1 << " voto " << endl;
+	}
+	if (cont_v2 > 1){
+		cout <<"percentual de voto para o candidato 2 eh " << p_v2 << "% com " << cont_v2 << " votos " << endl;
+	}else {
+		cout <<"percentual de voto para o candidato 2 eh " << p_v2 << "% com " << cont_v2 << " voto " << endl;
+	}	
+	if (cont_null> 1){
+		cout <<"percentual de voto nulos " << p_vn << "% com " << cont_null << " votos " << endl;
+	}else {
+		cout <<"percentual de voto nulos " << p_vn << "% com " << cont_null << " voto " << endl;
+	}	
+		if (cont_branco> 1){
+		cout <<"percentual de voto em branco " << p_vb << "% com " << cont_branco << " votos " << endl;
+	}else {
+		cout <<"percentual de voto em branco " << p_vb << "% com " << cont_branco << " voto " << endl;
+	}	
+	
+	
 	return 0;
 }
