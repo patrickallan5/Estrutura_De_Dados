@@ -8,7 +8,7 @@ int pilha[5];
 int i = 0;
 // criando metodo insercao
 int insercao (){
-	if(pilha[i] != NULL){
+	if(pilha[4] != NULL){
 		cout << "PILHA CHEIA" << endl;
 	}else{
 		pilha[i] =num;
@@ -19,7 +19,7 @@ int insercao (){
   	  
 	};
 }
-// criando metoso 
+// criando metodo retirada
 int retirada (){
 	if(pilha[0] == NULL){
 		cout << "PILHA VAZIA" << endl;
@@ -69,6 +69,27 @@ int main(int argc, char** argv)
 	//empilhando (25)	
 	num = 25;
 	cout << "empilando 25 " << endl;
+	cout << endl;
+	insercao();
+	cout << endl;
+	
+	
+	
+	// incrementando mais itens 
+		num = 18;
+	cout << "empilando 18 " << endl;
+	cout << endl;
+	insercao();
+	cout << endl;
+	
+		num = 41;
+	cout << "empilando 41 " << endl;
+	cout << endl;
+	insercao();
+	cout << endl;
+	
+		num = 60;
+	cout << "empilando 60 " << endl;
 	cout << endl;
 	insercao();
 	cout << endl;
